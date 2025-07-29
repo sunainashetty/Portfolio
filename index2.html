@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Developer | AdarshSharath</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #001f3f, #00cfff);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #002a50;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            color: #7ddfff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .navbar nav ul li a.active,
+        .navbar nav ul li a:hover {
+            background-color: #00bfff;
+            color: white;
+        }
+
+        .username {
+            color: #7ddfff;
+            font-weight: bold;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            gap: 3rem;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .purple {
+            color: #00e6ff;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            color: #d5f3ff;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            line-height: 1.6;
+            color: #e1f9ff;
+        }
+
+        .skills {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .skills span {
+            background-color: #00bfff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: #00d1ff;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #009ecc;
+        }
+
+        .social-icons {
+            margin-top: 2.5em;
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .social-icons img {
+            width: 28px;
+            height: 28px;
+            filter: invert(1);
+            transition: transform 0.3s;
+            margin-right: 10px;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="logo">SunainaShetty</div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index2.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="username">@sunaina_shetty._</div>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <h1><span class="white">Frontend</span> <span class="purple">Developer</span></h1>
+                <p class="subtitle">BCA JSSCACS Mysore |</p>
+                <p class="description">
+                    I’m a passionate Frontend Developer who loves crafting responsive, user-friendly web experiences
+                    using modern technologies. Currently sharpening my problem-solving skills through Data Structures
+                    and Algorithms in C, while also exploring the exciting world of Data Science. I thrive at the
+                    intersection of design and logic — building interfaces that are both functional and intuitive.
+                </p>
+
+                <div class="skills">
+                    <span>React</span>
+                    <span>Javascript</span>
+                    <span>Python</span>
+                    <span>C</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="about.html" class="btn">About 👤</a>
+                    <a href="projects.html" class="btn">Projects 🧑‍💻</a>
+                    <a href="mailto:adarshprakash2005@gmail.com.com" class="btn">Contact 📩</a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg"
+                            alt="GitHub"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+                            alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+                            alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="coding-illustration.png" alt="Developer Illustration">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

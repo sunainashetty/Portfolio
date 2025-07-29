@@ -1,0 +1,146 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #001f3f, #00cfff);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002a50;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: #7bdfff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.navbar nav ul li a.active,
+.navbar nav ul li a:hover {
+  background-color: #00bfff;
+  color: white;
+}
+
+.username {
+  color: #7bdfff;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-top: 15vh;
+}
+
+/* Animated Heading */
+.fade-in-text {
+  font-size: 4.5rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInUp 3s ease forwards;
+}
+
+.fade-in-text span {
+  color: #00e0ff;
+}
+
+/* Icons below heading */
+.icons {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* responsiveness */
+/* ---------- Responsive: Samsung Galaxy S23 FE (≤430px) ---------- */
+@media (max-width: 430px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  .navbar nav ul li a {
+    display: block;
+    width: auto;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .logo,
+  .username {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    margin-top: 8vh;
+    padding: 1rem;
+  }
+
+  .fade-in-text {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  .icons {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
